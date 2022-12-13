@@ -2,7 +2,20 @@
 
 All work by Darien Nouri
 
+$ git add .
+# Adds the
+$ git commit -m "First commit"
+# Commits 
+$ git remote add origin <REMOTE_URL>
+# Sets the new remote
+$ git remote -v
+# Verifies the new remote URL
+$ git push origin main
+# Pushes the c
 
+o unstage all changes for all files:
+
+git reset
 '''
 import csv
 from bs4.element import SoupStrainer
