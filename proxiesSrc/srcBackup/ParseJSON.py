@@ -36,7 +36,7 @@ def generalData(parsedJson:dict):
                 firstNestPairs[key] = parsedJson[list(parsedJson.keys())[1]]['property'][key]
             except:
                 firstNestPairs[key] = 'nan'
-        
+        firstNestPairs['hdpUrl'] = 'zillow.com/' + firstNestPairs['hdpUrl']
         # self.master_Dict.update(firstNestPairs)
         firstNestPairs['utcScrapeTime'] = utcCurrentTime
         return firstNestPairs
