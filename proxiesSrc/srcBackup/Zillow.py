@@ -171,7 +171,7 @@ class Zillow:
         NUM_THREADS = 20
         outputs= []
         with concurrent.futures.ThreadPoolExecutor(max_workers=NUM_THREADS) as executor:
-                    results = executor.map(self.async_scrape_url, listing_links, timeout=10)
+                    results = executor.map(self.async_scrape_url, listing_links, timeout=14)
                     
                     try:
                         for i in results:

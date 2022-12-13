@@ -56,7 +56,6 @@ def main(input_url, starting_price = 1000):
     try:
         while zillow.current_price > starting_price-1: 
             rounds+=1
-            print()
             print('Price Reset')
             if rounds > 1: zillow.updateUrlPrice(zillow.current_price)                    
                                 
@@ -75,6 +74,7 @@ def main(input_url, starting_price = 1000):
                     logging.info('timeout!')
                 finally:
                     logging.info('2 finished\n')
+                time.sleep(.4)
             
                 #zillow.runAsync(listing_links)
                 
