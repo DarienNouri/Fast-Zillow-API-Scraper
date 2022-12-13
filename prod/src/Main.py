@@ -2,7 +2,7 @@
 
 All work by Darien Nouri
 
-$ git add .
+$ git add  .
 # Adds the
 $ git commit -m "First commit"
 # Commits 

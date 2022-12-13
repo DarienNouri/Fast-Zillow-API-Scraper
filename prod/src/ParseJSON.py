@@ -26,7 +26,7 @@ def parseJSON(soup):
     rawPayload = json.loads(data['apiCache'])
     payloadDict = rawPayload[list(rawPayload.keys())[1]]
     return rawPayload
-#
+# 
 def generalData(parsedJson:dict):
         unNestedKeys = [ 'zpid', 'homeStatus', 'bedrooms', 'bathrooms', 'price', 'yearBuilt', 'isRentalListingOffMarket', 'contingentListingType',
         'pageViewCount', 'daysOnZillow', 'longitude', 'latitude','hdpUrl', 'desktopWebHdpImageLink', 'timeZone', 'brokerId', 'monthlyHoaFee', 'propertyTaxRate', 'lotSize']
