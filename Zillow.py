@@ -14,7 +14,7 @@ class Zillow:
 
     def __init__(self):
         self.start = time.time()
-        self.API_KEY = '494f207eb22c2f7df82afa4943654c5e'
+        self.API_KEY = '<SCRAPERAPI-KEY>'
         self.listingDatabase = []
         self.starting_price = 0
         self.previous_price = 0
